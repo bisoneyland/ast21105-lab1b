@@ -1,25 +1,22 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 int main()
 {
-	int number;
-	int total;
-	int count;
-	number = 0;
-	cout << "Enter input";
+	int number = 0;
+	cout << "Enter input:  ";
 	cin >> number;
 	while (number != -1)
 	{
-		count = number;
-		total = 0;//
+		int count = number;
+		int total = 0;
 		for (int i = 1; i <= count; i++)
 		{
 			cin >> number;
 			total += number;
 		};
-		cout << endl << "Output" << total << endl;
-		cout << "Enter input";
+		cout << "Output total: " << total << endl;
+		cout << "Enter input:  ";
 		cin >> number;
 
 	};
